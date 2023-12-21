@@ -50,9 +50,8 @@ const config: webpack.Configuration = {
 
 module.exports = () => {
     if (process.env.NODE_ENV === 'production') {
-        Dotenv.config({ path: './.env' });
         return merge(config, require('./webpack.prod.ts'));
     }
-    Dotenv.config({ path: './.env.dev' });
+    Dotenv.config({ path: './.env' });
     return merge(config, require('./webpack.dev.ts'));
 };

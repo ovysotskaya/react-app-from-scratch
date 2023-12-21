@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.common.ts",
+    "build": "webpack --config webpack.common.ts",
     "build-dev": "cross-env NODE_ENV=development webpack --config webpack.common.ts",
-    "serve": "cross-env NODE_ENV=production webpack-dev-server --config webpack.common.ts --open",
+    "serve": "webpack-dev-server --config webpack.common.ts --open",
     "serve-dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.common.ts --open"
   },
   "keywords": [],
