@@ -1,0 +1,27 @@
+{
+  "name": "react-app-from-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack.common.ts",
+    "build-dev": "cross-env NODE_ENV=development webpack --config webpack.common.ts",
+    "serve": "cross-env NODE_ENV=production webpack-dev-server --config webpack.common.ts --open",
+    "serve-dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.common.ts --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "filemanager-webpack-plugin": "^8.0.0",
+    "html-webpack-plugin": "^5.5.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1"
+  }
+}
