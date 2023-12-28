@@ -1,11 +1,8 @@
-import * as webpack from "webpack";
+import webpack from "webpack";
 
 const config: webpack.Configuration = {
     mode: 'production',
-    devtool: 'source-map',
-    devServer: {
-        port: process.env.PORT
-    },
+    devtool: 'source-map'
 };
 
 module.exports = config;
