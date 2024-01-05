@@ -36,7 +36,7 @@ export default (config: BuildType): webpack.Configuration => {
            extensions: ['.js', '.jsx','.tsx', '.ts'],
        },
        devServer: config.mode === 'development' ? {
-           port: process.env.DEV_PORT,
+           port: process.env.DEV_PORT || 9000,
            open: true
        } : undefined
    }
