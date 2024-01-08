@@ -15,7 +15,7 @@ export default (config: BuildType): webpack.Configuration => {
    return {
        mode: config.mode || 'development',
        entry: {
-           main: path.resolve(__dirname, './src/index.ts'),
+           main: path.resolve(__dirname, './src/index.tsx'),
        },
        output: {
            filename: '[name].[contenthash].js',
@@ -29,6 +29,10 @@ export default (config: BuildType): webpack.Configuration => {
                    test: /\.tsx?$/,
                    use: 'ts-loader',
                    exclude: /node_modules/,
+               },
+               {
+                   test: /\.s[ac]ss$/i,
+                   use: ['style-loader', 'css-loader', 'sass-loader']
                },
            ],
        },
